@@ -1,0 +1,213 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--backgroun);
+  margin: 0;
+}
+:root{
+--white: rgb(255, 255, 255);
+--backgroun: #e4e7e1;
+--verde1: rgb(177, 194, 146);
+--verde2: #588157ff;
+--verde3: #3a5a40ff;
+--verde4: #344e41ff;
+}
+.cabecalho{
+  background-color: var(--verde4);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+}
+.img_empresa{
+  height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  margin: 5px;
+}
+.figure{
+  padding-left: 40px;
+}
+.div_infoUser{
+  text-align: center;
+  padding-right: 40px;
+  display: flex;
+}
+.perfil{
+  border-radius: 5px;
+  padding: 10px;
+}
+.foto_user{
+  width: 30px;
+  height: 30px;
+}
+.nome_usuario{
+  font-weight: 700;
+}
+.div_button_editar_logout{
+  display: flex;
+}
+.button_editar{
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0.5px solid var(--verde4);
+  background-color: var(--white);
+  animation: buttonEditarVolta 0.5s;
+  animation-fill-mode: forwards;
+  height: 40px;
+}
+.editar_userInfo{
+  width: 25px;
+  height: 25px;
+}
+.button_logout{
+  border-radius: 50px;
+  height: 40px;
+  cursor: pointer;
+  border: 0.5px solid var(--verde4);
+  background-color: var(--white);
+  animation: buttonEditarVolta 0.5s;
+  animation-fill-mode: forwards;
+}
+.logout{
+  font-weight: 700;
+}
+
+/* MODAL EDITAR */
+
+#fade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#modal{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: -30%;
+  left: 50%;
+  z-index: 10;
+  width: 50vw;
+  height: 460px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+#header_modal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--rosa);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+#close_modal{
+  background-color: var(--verde1);
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+}
+#button_editar_div{
+  margin:50px;
+  text-align: center;
+}
+#button_editar{
+  background-color: var(--verde1);
+  font-weight: 700;
+  color: var(--black);
+  border: none;
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+#close_modal{
+  border: 0.5px solid var(--verde1);
+}
+#body_modal{
+  text-align: center;
+}
+.descricoes{
+  font-weight: 700;
+  margin: 10px;
+}
+.input_descricoes{
+  padding: 10px;
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
+  border:none;
+  background-color: var(--verde1);
+  font-family: 'Montserrat', sans-serif;
+}
+.input_descricoes::placeholder{
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+}
+button{
+  cursor: pointer;
+}
+
+@media(min-width:800px){
+  .button_editar:hover{
+    background-color: rgb(66, 183, 66);
+    animation: buttonEditar 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .button_logout:hover{
+    background-color: rgb(201, 38, 38);
+    color: var(--white);
+    animation: buttonEditar 0.5s;
+    animation-fill-mode: forwards;
+  }
+  #button_editar:hover{
+    background-color: var(--white);
+    color: var(--verde1);
+    border: 0.5px solid var(--verde1);
+  }
+  #close_modal:hover{
+    background-color: var(--white);
+    color: var(--verde1);
+    border: 0.5px solid var(--verde1);
+  }
+
+}
+
+@keyframes buttonEditar{
+  0%{
+    width: 40px;
+    right: inherit;
+  }
+  100%{
+    width: 90px;
+    right: inherit;
+  }
+}
+@keyframes buttonEditarVolta{
+  0%{
+    width: 100px;
+    right: inherit;
+  }
+  100%{
+    width: 40px;
+    right: inherit;
+  }
+}
+.statusEmpregabilidade{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.statusMain{
+  padding: 10px;
+  margin: 0 10px;
+  font-weight: 500;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  display: none;
+}

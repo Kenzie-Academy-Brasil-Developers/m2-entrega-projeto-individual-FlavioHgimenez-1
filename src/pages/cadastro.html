@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/cadastro.css">
+  <link rel="shortcut icon" href="../assets/logoMarca.jpg" type="image/x-icon">
+  <title>Turtle</title>
+</head>
+
+<body>
+      <header class="header">
+
+            <figure class="icone_empresa">
+                  <img class="imagem_icone_empresa" src="../assets/logoMarca.jpg" alt="logo">
+                  <h1 class="texto_empresa">Turtle</h1>
+            </figure>
+      
+            <div class="div_header_button_login">
+                  <button class="header_button_cadastro">Login</button>
+                  <button class="header_button_home">Home</button>
+            </div>
+      
+      </header>
+
+      <main class="container">
+    
+            <div class="main_descricaoEmpresa">
+
+                  <img class="imagem_empresa" src="../assets/logoMarca.jpg" alt="">
+                  <h1 class="bordao_texto_empresa">Turtle admin company</h1>
+                  <span class="descricao_empresa">Com Turtle sua empresa será bem organizada!</span>
+
+            </div>
+  
+
+            <div class="main_cadastro">
+
+                  <h2 class="texto_cadastro">cadastro</h2>
+
+                  <div class="div_span">
+                        <span class="email">nome:</span>
+                        <div class="error_nome">
+                              <span class="error_mensagem_nome">Preencha o campo abaixo!</span>
+                              <img class="img_error_nome" src="../assets/error-icon.svg" alt="">
+                        </div>
+                  </div>
+                  <div class="div_input">   
+                        <input class="input_nome" type="text" placeholder="digite seu nome">
+                  </div>
+
+                  <div class="div_span">
+                        <span class="email">email:</span>
+                        <div class="error_email">
+                              <span class="error_mensagem_email">Preencha o campo abaixo!</span>
+                              <img class="img_error_email" src="../assets/error-icon.svg" alt="">
+                        </div>
+                  </div>
+                  <div class="div_input">   
+                        <input class="input_email" type="text" placeholder="digite seu email">
+                  </div>
+                  
+                  
+                  
+                  <div class="div_span">
+                        <span class="senha">senha:</span>
+                        <div class="error_senha">
+                              <span class="error_mensagem_senha">Preencha o campo abaixo!</span>
+                              <img class="img_error_senha" src="../assets/error-icon.svg" alt="">
+                        </div>
+                  </div>
+                  <div class="div_input">     
+                        <input class="input_senha" type="password" placeholder="digite sua senha">
+                  </div>
+                  
+                  
+
+                  <div class="div_span">
+                        <span class="nivelProfissional">nivel Profissional:</span>
+                        <div class="error_nivelProfissional">
+                              <span class="error_mensagem_nivelProfissional">Preencha o campo abaixo!</span>
+                              <img class="img_error_nivelProfissional" src="../assets/error-icon.svg" alt="">
+                        </div>
+                  </div>
+                  <form class="form_input">  
+                        <input type="radio" id="Estagiário" name="nivel" value="estágio">
+                        <label for="nivel">estágio</label>
+                        <input type="radio" id="Júnior" name="nivel" value="júnior" >
+                        <label for="nivel">júnior</label>
+                        <input type="radio" id="Pleno" name="nivel" value="pleno">
+                        <label for="nivel">pleno</label>
+                        <input type="radio" id="Senior" name="nivel" value="sênior">
+                        <label for="nivel">sênior</label>
+                  </form>
+                  
+                  <div class="div_button_entrar">
+                        <button class="button_entrar">Cadastrar-se</button>
+                  </div>
+            
+            </div>
+  
+      </main>
+      <script src="../script/cadastro.js"></script>
+</body>
+</html>

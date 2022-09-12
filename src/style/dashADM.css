@@ -1,0 +1,281 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--backgroun);
+  margin: 0;
+  display: flex;
+}
+:root {
+  --white: rgb(255, 255, 255);
+  --backgroun: #e4e7e1;
+  --verde1: rgb(177, 194, 146);
+  --verde2: #588157ff;
+  --verde3: #3a5a40ff;
+  --verde4: #344e41ff;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--verde4);
+  width: 175px;
+  height: 100vh;
+  text-align: center;
+}
+.turtle {
+  font-size: 30px;
+  color: var(--verde1);
+}
+.ul{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.cards{
+  height: 30px;
+}
+.button_ul_empresas{
+  background-color: var(--verde4);
+  border: none;
+  padding: 0;
+  color: var(--verde1);
+  font-size: 17px;
+  animation:scale-in-center 3s;
+}
+.button_ul_setores{
+  background-color: var(--verde4);
+  border: none;
+  padding: 0;
+  color: var(--verde1);
+  font-size: 17px;
+  animation:scale-in-center 3s;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logoUser {
+  width: 35px;
+  height: 35px;
+}
+
+/* MAIN SETORES */
+
+.img_main{
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border-radius: 50%;
+}
+.bemvindo{
+  font-size: 40px;
+}
+.main{
+  width: 100%;
+  text-align: center;
+}
+.h1_setores{
+  margin: 20px;
+  font-size: 40px;
+}
+.ul_setores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.li_setores{
+  width: 300px;
+  background-color: var(--white);
+  border: 2px solid var(--verde1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* MAIN EMPRESAS */
+
+.h1_empresas{
+  margin: 20px;
+  font-size: 40px;
+}
+.ul_empresas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.cards_empresas{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 2px solid var(--verde1);
+}
+.nome_empresa{
+  font-size: 20px;
+}
+
+/* ul buttons empresas */
+.ulButtons{
+  margin: 50px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.cards_buttons{
+  width: 150px;
+  background-color: var(--verde4);
+  border-radius: 10px;
+  padding: 10px;
+}
+.criarEmpresa{
+  color: var(--white);
+  cursor: pointer;
+}
+.cards_empresas:hover{
+  background-color: var(--verde4);
+  color: var(--verde1);
+  border: 2px solid var(--verde4);
+}
+.cards_buttons:hover{
+  background-color: var(--verde1);
+}
+
+/* media query */
+
+@media (min-width: 800px) {
+  button {
+    cursor: pointer;
+  }
+  .button_ul_setores:hover {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .button_ul_empresas:hover {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+}
+
+/* modal */
+.modal{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: -30%;
+  left: 50%;
+  z-index: 10;
+  width: 50vw;
+  height: 460px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+.fade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.h1CriarEmpresa{
+  font-size: 25px;
+}
+.closet{
+  border: none;
+  background-color: var(--verde1);
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 7px;
+}
+.bodyModal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h2Nome{
+  font-size: 18px;
+  margin: 10px;
+}
+.inputNome{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  background-color: var(--verde1);
+  border-radius: 10px;
+}
+.inputNome::placeholder{
+  color: black;
+}
+.h2Horario{
+  font-size: 18px;
+  margin: 10px;
+}
+.inputHorario{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  background-color: var(--verde1);
+  border-radius: 10px;
+}
+.inputHorario::placeholder{
+  color: black;
+}
+.h2Descricao{
+  font-size: 18px;
+  margin: 10px;
+}
+.inputDescricao{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  background-color: var(--verde1);
+  border-radius: 10px;
+}
+.inputDescricao::placeholder{
+  color: black;
+}
+.h2Setor{
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 700;
+}
+.inputSetor{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  background-color: var(--verde1);
+  border-radius: 10px;
+}
+.divButtonCadastrar{
+  margin: 20px;
+}
+.buttonCadastrar{
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--verde1);
+}
+.buttonCadastrar:hover{
+  background-color: var(--verde4);
+  color: white;
+}
+
+
