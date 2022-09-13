@@ -51,6 +51,21 @@ header {
   font-size: 17px;
   animation:scale-in-center 3s;
 }
+.button_sair{
+  margin: 10px;
+  height: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--verde4);
+  color: var(--verde1);
+  font-size: 17px;
+}
+.button_sair:hover{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+}
 .logo {
   width: 50px;
   height: 50px;
@@ -278,4 +293,142 @@ header {
   color: white;
 }
 
+/* modal click li empresas */
 
+.modal_empresas{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 20vw;
+  height: 300px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 35px;
+  border-radius: 0.5rem;
+}
+.fade_empresas{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_empresas_button_departamentos{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--verde1);
+  border: none;
+  border: 1px solid var(--verde1);
+}
+.modal_empresas_button_criarDepartamentos{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--verde1);
+  border: 1px solid var(--verde1);
+  border: none;
+}
+.modal_empresas_button_departamentos:hover{
+  background-color: white;
+  border: 1px solid var(--verde1);
+}
+.modal_empresas_button_criarDepartamentos:hover{
+  background-color: white;
+  border: 1px solid var(--verde1);
+}
+.nomeEmpresa{
+  font-size: 30px;
+}
+
+/* modal funcionario */
+
+.modal_funcionario{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 20vw;
+  height: 130px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 35px;
+  border-radius: 0.5rem;
+}
+.fade_funcionario{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.button_departamento{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: black;
+  background-color: var(--verde1);
+}
+#contract{
+  padding: 5px;
+}
+.button_departamento:hover{
+  background-color: var(--verde4);
+  color: var(--white);
+  border: none;
+}
+
+/* modal criar Departamento */
+
+.modal_departamento{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 50vw;
+  height: 300px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 35px;
+  border-radius: 0.5rem;
+}
+.fade_departamento{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.criarDepartamento{
+  font-size: 25px;
+}
+.buttonCriarDepartamento{
+  padding: 10px;
+  margin: 20px;
+  background-color: var(--verde1);
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+}
+.buttonCriarDepartamento:hover{
+  background-color: var(--verde4);
+  color: var(--white);
+}
