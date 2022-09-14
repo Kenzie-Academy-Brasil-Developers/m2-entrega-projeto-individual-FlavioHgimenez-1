@@ -4,6 +4,9 @@ body {
   margin: 0;
   display: flex;
 }
+.main{
+  padding-bottom: 30px;
+}
 :root {
   --white: rgb(255, 255, 255);
   --backgroun: #e4e7e1;
@@ -145,7 +148,6 @@ header {
   justify-content: center;
 }
 .cards_buttons{
-  width: 150px;
   background-color: var(--verde4);
   border-radius: 10px;
   padding: 10px;
@@ -190,7 +192,7 @@ header {
   top: -30%;
   left: 50%;
   z-index: 10;
-  width: 50vw;
+  width: 30vw;
   height: 460px;
   max-width: 90%;
   padding: 1.2rem;
@@ -303,7 +305,7 @@ header {
   left: 57%;
   z-index: 10;
   width: 20vw;
-  height: 300px;
+  height: 220px;
   max-width: 90%;
   display: flex;
   flex-direction: column;
@@ -398,13 +400,13 @@ header {
   top: 0%;
   left: 57%;
   z-index: 10;
-  width: 50vw;
+  width: 20vw;
   height: 300px;
   max-width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   padding: 35px;
   border-radius: 0.5rem;
 }
@@ -422,7 +424,7 @@ header {
 }
 .buttonCriarDepartamento{
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   background-color: var(--verde1);
   width: 90px;
   border: none;
@@ -431,4 +433,191 @@ header {
 .buttonCriarDepartamento:hover{
   background-color: var(--verde4);
   color: var(--white);
+}
+
+/* departamento selecionado modal */
+.modal_departamentoSelecionado{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 30vw;
+  height: 300px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 35px;
+  border-radius: 0.5rem;
+}
+.fade_departamentoSelecionado{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#contract1{
+  padding: 5px;
+  width: 90%;
+}
+.buttonContratar{
+  background-color: var(--white);
+  color: --verde2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0.5px solid var(--verde2);
+  width: 60%;
+}
+.buttonContratar:hover{
+  background-color:var(--verde2);
+  color: white;
+}
+.buttonDemitir{
+  background-color: var(--white);
+  color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0.5px solid red;
+  width: 60%;
+}
+.buttonDemitir:hover{
+  background-color:red;
+  color: white;
+}
+.buttonEditarDepartamento{
+  background-color: var(--white);
+  color: --verde2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0.5px solid var(--verde2);
+  width: 60%;
+}
+.buttonDeletarDepartamento{
+  background-color: var(--white);
+  color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0.5px solid red;
+  width: 60%;
+}
+.buttonEditarDepartamento:hover{
+  background-color:var(--verde2);
+  color: white;
+}
+.buttonDeletarDepartamento:hover{
+  background-color:red;
+  color: white;
+}
+
+/* modal Contratar */
+.modal_contratar{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 30vw;
+  height: 300px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 35px;
+  border-radius: 0.5rem;
+}
+.fade_contratar{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.buttonContratarUser{
+  padding: 10px 15px;
+  border: 1px solid var(--verde2);
+  color: var(--verde2);
+  border-radius: 5px;
+  background-color: var(--white);
+}
+.buttonContratarUser:hover{
+  background-color:var(--verde2);
+  color: white;
+}
+.buttonSelecionarUsers{
+  padding: 10px 15px;
+  border: 1px solid var(--verde2);
+  color: var(--verde2);
+  border-radius: 5px;
+  background-color: var(--white);
+}
+.buttonSelecionarUsers:hover{
+  background-color:var(--verde2);
+  color: white;
+}
+
+/* modal editar departamento */
+.modal_editarDepartamento{
+  position: fixed;
+  transform: translate(-50%, 50%);
+  background-color: var(--white);
+  top: 0%;
+  left: 57%;
+  z-index: 10;
+  width: 40vw;
+  height: 250px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+}
+.fade_editarDepartamento{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.inputEditar{
+  padding: 20px;
+  width: 60%;
+}
+.buttonEditar{
+  background-color: var(--white);
+  color: var(--verde2);
+  border-radius: 5px;
+  border:  1px solid var(--verde2);
+  padding: 10px;
+  width: 30%;
+}
+.buttonEditar:hover{
+  background-color: var(--verde2);
+  color: white;
+}
+.buttonDeletar{
+  background-color: var(--white);
+  color: red;
+  border-radius: 5px;
+  border:  1px solid red;
+  padding: 10px;
+  width: 30%;
+}
+.buttonDeletar:hover{
+  background-color: red;
+  color: white;
 }
